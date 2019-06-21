@@ -1,0 +1,38 @@
+@import "zmienne";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $mada, Arial;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom right, rgba(16,24,30,0.6), rgba(51,161,21,0.6), rgba(255,174,19,0.6)),
+                    url(../img/rectangle.png),
+                    url(../img/rectangle2.png),
+                    url(../img/bg_hero.png);
+    background-size:cover;
+    //background: linear-gradient(to bottom right, rgba(16,24,30,0.9), rgba(51,161,21,0.9), rgba(255,174,19,0.9));
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        font-size: $fontsize-title;
+        font-family: $homenaje;
+        font-weight: $fontweight400;
+    }
+    .hero__title--white {
+        color: $white;
+    }
+    .hero__title--black {
+        color: $black;
+    }
+}
