@@ -1,0 +1,23 @@
+@mixin title($color) {
+    font-size: $fontsize-title;
+    font-family: $homenaje;
+    color: $color;
+}
+
+@mixin paragraph-quote($color) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    &:before {
+        content: "„";
+        font-size: 5em;
+        margin-right: 20px;
+        font-weight: 700;
+    }
+    p{
+        font-size: $fontsize-paragraph;
+        font-family: $mada;
+        color: $color;
+        text-align: left;
+    }
+}

@@ -1,4 +1,5 @@
 @import "zmienne";
+@import "mixin";
 
 * {
     margin: 0;
@@ -24,7 +25,7 @@ html, body {
     justify-content: center;
     flex-direction: column;
     h1 {
-        font-size: $fontsize-title;
+        font-size: $fontsize-title-huge;
         font-family: $homenaje;
         font-weight: $fontweight400;
     }
@@ -73,5 +74,26 @@ html, body {
         font-size: $fontsize-navbar !important;
         padding-left: 50px;
         padding-right: 50px;
+    }
+}
+
+.mission {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    .mission__content {
+        max-width: 1140px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        h1 {
+            @include title($black);
+        }
+        .mission__content--quote {
+            @include paragraph-quote($black);
+        }
     }
 }
