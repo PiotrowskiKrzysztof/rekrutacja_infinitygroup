@@ -21,7 +21,7 @@ html, body {
 }
 
 .hero h1 {
-  font-size: 3.65em;
+  font-size: 4.2em;
   font-family: "Homenaje";
   font-weight: 400;
 }
@@ -32,4 +32,49 @@ html, body {
 
 .hero .hero__title--black {
   color: #2d2d2d;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+.navbar ul {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  position: relative;
+}
+
+.navbar ul .navbar__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.navbar ul img {
+  height: 30px;
+  width: auto;
+}
+
+.navbar ul .navbar__border {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-family: "Mada";
+  font-weight: 300;
+  font-size: 1.3em !important;
+  padding-left: 50px;
+  padding-right: 50px;
 }

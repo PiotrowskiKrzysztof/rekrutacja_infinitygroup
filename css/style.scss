@@ -17,7 +17,6 @@ html, body {
                     url(../img/rectangle2.png),
                     url(../img/bg_hero.png);
     background-size:cover;
-    //background: linear-gradient(to bottom right, rgba(16,24,30,0.9), rgba(51,161,21,0.9), rgba(255,174,19,0.9));
     text-transform: uppercase;
     height: 100%;
     display: flex;
@@ -34,5 +33,45 @@ html, body {
     }
     .hero__title--black {
         color: $black;
+    }
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    ul {
+        width: 100%;
+        max-width: 1140px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style-type: none;
+        position: relative;
+        .navbar__logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+        }
+        img {
+            height: 30px;
+            width: auto;
+        }
+        .navbar__border {
+            border-right: 1px solid rgba(255,255,255,.5);
+        }
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: $mada;
+        font-weight: $fontweight300;
+        font-size: $fontsize-navbar !important;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
