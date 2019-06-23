@@ -1,3 +1,5 @@
+@import "zmienne";
+
 @mixin title($color) {
     font-size: $fontsize-title;
     font-family: $homenaje;
@@ -13,11 +15,31 @@
         font-size: 5em;
         margin-right: 20px;
         font-weight: 700;
+        color: $black;
+        margin-left: -54px;
     }
     p{
         font-size: $fontsize-paragraph;
         font-family: $mada;
         color: $color;
         text-align: left;
+    }
+}
+
+@mixin button--contact {
+    text-decoration: none;
+    color: white;
+    font-family: $homenaje;
+    font-weight: $fontweight400;
+    font-size: $fontsize-paragraph;
+    border: 1px solid $green;
+    border-radius: 8px;
+    background-color: $green;
+    padding-left: 20px;
+    padding-right: 20px;
+    &:hover {
+        transition: .25s;
+        background-color: transparent;
+        color: $green;
     }
 }

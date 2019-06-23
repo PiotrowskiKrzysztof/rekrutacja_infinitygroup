@@ -3,24 +3,38 @@
      <head>
             <title>Krzysztof Piotrowski</title>
             <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
             <link rel="stylesheet" type="text/css" href="css/style.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link href="https://fonts.googleapis.com/css?family=Homenaje|Mada:300,400&display=swap" rel="stylesheet">
      </head>
      <body>
-        <nav class="navbar">
+        <nav id="navbar">
+            <div class="navbar__mobileIcon">
+                <img src="img/menu_icon.svg" alt="logo"></a>
+            </div>
             <ul>
-                <li class="navbar__logo"><img src="img/logo.svg" alt="logo"></li>
-                <li class="navbar__border"><a class="active" href="#">Mission</a></li>
-                <li class="navbar__border"><a href="#">Clients</a>
-                <li class="navbar__border"><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="navbar__logo"><a class="scroll" href="#hero"><img src="img/logo.svg" alt="logo"></a></li>
+                <li class="navbar__border"><a class="scroll navItem-hover" href="#mission">Mission</a></li>
+                <li class="navbar__border"><a class="scroll navItem-hover" href="#clients">Clients</a>
+                <li class="navbar__border"><a class="scroll navItem-hover" href="#products">Products</a></li>
+                <li><a class="scroll navItem-hover" href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <section class="hero">
+        <nav id="navbarMobile">
+            <ul>
+                <li><a class="scroll" href="#hero"><img src="img/logo.svg" alt="logo"></a></li>
+                <li><a class="scroll" href="#mission">Mission</a></li>
+                <li><a class="scroll" href="#clients">Clients</a>
+                <li><a class="scroll" href="#products">Products</a></li>
+                <li><a class="scroll" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="hero">
             <h1 class="hero__title--white">praktyki</h1><br>
             <h1 class="hero__title--black">infinity-group</h1><br>
         </section>
-        <section class="mission">
+        <section id="mission">
             <div class="mission__content">
                 <h1>Mission</h1>
                 <div class="mission__content--quote">
@@ -28,5 +42,157 @@
                 </div>
             </div>
         </section>
-     </body>
+        <section id="clients">                       
+            <div class="clients__content">
+                <h1>Clients</h1>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                    <div class="carouselPage">
+                                            <img class="carouselPage__image" src="img/ipad.png" alt="ipad" height="500">
+                                            <article class="carouselPage__article">
+                                                <div class="article__quote">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                                <p class="article__projectManager">Project Manager / <span><a href="#">Infinity-group.pl</a></span></p>
+                                                <a class="article__tag" href="#">web design</a>
+                                                <a class="article__tag" href="#">usability</a>
+                                                <a class="article__tag" href="#">e-commerce</a>
+                                            </article>
+                                        </div>
+                            </div>
+                            <div class="carousel-item">
+                                    <div class="carouselPage">
+                                            <img class="carouselPage__image" src="img/ipad.png" alt="ipad" height="500">
+                                            <article class="carouselPage__article">
+                                                <div class="article__quote">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                                <p class="article__projectManager">Project Manager / <span><a href="#">Infinity-group.pl</a></span></p>
+                                                <a class="article__tag" href="#">web design</a>
+                                                <a class="article__tag" href="#">usability</a>
+                                                <a class="article__tag" href="#">e-commerce</a>
+                                            </article>
+                                        </div>
+                            </div>
+                            <div class="carousel-item">
+                                    <div class="carouselPage">
+                                            <img class="carouselPage__image" src="img/ipad.png" alt="ipad" height="500">
+                                            <article class="carouselPage__article">
+                                                <div class="article__quote">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                                <p class="article__projectManager">Project Manager / <span><a href="#">Infinity-group.pl</a></span></p>
+                                                <a class="article__tag" href="#">web design</a>
+                                                <a class="article__tag" href="#">usability</a>
+                                                <a class="article__tag" href="#">e-commerce</a>
+                                            </article>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+        </section>
+        <section id="products">
+            <div class="products__content">
+                <h1>Products</h1>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <div class="content__icons">
+                    <div class="icons__container">
+                        <img class="container__icons--icon" src="img/001-malware-1.svg" alt="001-malware-1">
+                    </div>
+                    <div class="icons__container">
+                        <img class="container__icons--icon" src="img/002-smartphone-1.svg" alt="002-smartphone-1">                        
+                    </div>
+                    <div class="icons__container">
+                        <img class="container__icons--icon" src="img/003-folder.svg" alt="003-folder">                        
+                    </div>
+                    <div class="icons__container">
+                        <img class="container__icons--icon" src="img/004-malware.svg" alt="004-malware">                        
+                    </div>
+                    <div class="icons__container">
+                        <img class="container__icons--icon" src="img/005-pendrive.svg" alt="005-pendrive">                       
+                    </div>
+                    <div class="icons__container">
+                        <img class="container__icons--icon" src="img/006-network.svg" alt="006-network">                        
+                    </div>
+                    <div class="icons__container">
+                        <img class="container__icons--icon" src="img/007-smartphone.svg" alt="007-smartphone">                        
+                    </div>
+                    <div class="icons__container">
+                        <img class="container__icons--icon" src="img/008-fishing.svg" alt="008-fishing">                        
+                    </div>
+                    <div class="icons__container">
+                        <img class="container__icons--icon" src="img/009-data-protection.svg" alt="009-data-protection">                        
+                    </div>
+                    <div class="icons__container">
+                        <img class="container__icons--icon" src="img/010-credit-card.svg" alt="010-credit-card">                        
+                    </div>
+                    <div class="icons__container">
+                        <img class="container__icons--icon" src="img/011-hacker.svg" alt="011-hacker">                        
+                    </div>
+                    <div class="icons__container">
+                        <img class="container__icons--icon" src="img/012-firewall.svg" alt="012-firewall">                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sectionMap">
+            <div id="map"></div>
+            <div class="map__information">
+                <p>Infinity Group Sp. z o.o.</p>
+                <p>ul. Skladowa 12, 15-399 Bialystok, Polska.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact__content">
+                <div class="contact__content--title">
+                    <h1>Contact</h1>
+                    <button class="button--contact" type="button">Let us know how to contact You</button>
+                </div>
+                <div class="contant__content--form">
+                    <p class="subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo i nventore veritatis et quasi
+                    architecto beatae vitae.</p>
+                    <form>
+                        <label for="name">Hello! I'm</label>
+                        <input type="text" placeholder="Your Name" id="name" name="name">
+                        <label for="company">and I represent</label>
+                        <input type="text" placeholder="Company name" id="company" name="company">
+                        <label>.</label>
+                        <br>
+                        <label for="number">Call me at</label>
+                        <input type="text" placeholder="Your telephone number" id="number" name="number">
+                        <label for="email">or send an email to</label>
+                        <input type="text" placeholder="Your email adress" id="email" name="email">
+                        <label>.</label>
+                        <br>
+                        <label><input type="checkbox"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</label>
+                        <br>
+                        <button class="button--contact" type="submit">send details</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="footer__content">
+                <p>ⓒCopyrights 2018 IG</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8AFGANer3_Ul8TZPDJWlyoAAD9CQOESQ&callback=initMap" async defer></script>
+        <script src="js/map.js"></script>
+    </body>
 </html>
